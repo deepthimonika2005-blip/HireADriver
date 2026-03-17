@@ -5,38 +5,24 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
-<div class="form-container">
 
-<h2>Login</h2>
+ <div class="login-container">
+     <h1>Hire a Driver Login Page</h1>
 
-<form action="LoginServlet" method="post">
+     <form action="http://localhost:8082/HireADriver/login" method="post">
+         <label>USERNAME :</label>
+         <input type="text" name="user_name"/>
 
-<label>Email</label>
-<input type="email" name="email" required>
+         <label>PASSWORD :</label>
+         <input type="password" name="password"/>
 
-<label>Password</label>
-<input type="password" name="password" required>
-
-<label>User Type</label>
-
-<select name="usertype">
-<option value="customer">Customer</option>
-<option value="driver">Driver</option>
-</select>
-
-<br><br>
-
-<button type="submit" class="btn">Login</button>
-
-</form>
-
-<p>New User? <a href="register.jsp">Register Here</a></p>
-
-</div>
-
+         <input type="submit" value="Login"/>
+     </form>
+ </div>
 
 </body>
 </html>
